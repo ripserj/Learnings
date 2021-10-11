@@ -44,3 +44,4 @@ my_list1 = [1, 2, 3, 4, 5]                      # ПРобуем функцию 
 my_list2 = ['пн', 'вт', 'ср', 'чт', 'пт']
 result = zip(my_list2, my_list1)
 print(dict(result))
+print(dir(result))
