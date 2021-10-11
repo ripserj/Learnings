@@ -10,6 +10,7 @@ print(factorial(3))
 
 
 def find_element_in_html_code(tree, elem):
+    """Функция обходит дерево из списка списков (например структуру DOM_HTML"""
     if elem in tree:
         return tree[elem]
     for key, sub_tree in tree.items():
