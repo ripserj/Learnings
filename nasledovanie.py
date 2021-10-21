@@ -2,6 +2,7 @@ class Engines():
     """Класс машины"""
     tyres = 4
     cabine = True
+
     def __init__(self, name="Какой-то транспорт"):
         self.name = name
 
@@ -49,6 +50,7 @@ track1.tyres = 5
 track1.inspect()
 print(track1.tyres)
 
+
 class Parent():
     class_var1 = 11
     class_var2 = 21
@@ -65,7 +67,8 @@ class Parent():
         print(self.class_var3)
         print(self.var_1)
         print(self._var_2)
-       # print(self.__var_3)
+    # print(self.__var_3)
+
 
 class Child(Parent):
     def child_method(self):
@@ -74,8 +77,33 @@ class Child(Parent):
         print(self.class_var3)
         print(self.var_1)
         print(self._var_2)
-       # print(self.__var_3)
+    # print(self.__var_3)
+
 
 obj = Child()
 obj.parent_method()
 obj.child_method()
+
+
+# Переопределение методов родительского класса у объектов
+
+class MyPet():
+    def operate(self):
+        print("Зверюга носится по клетке")
+
+
+class MyCat(MyPet):
+    def operate(self):
+        print("Зверюга спит")
+
+
+class MyHumster(MyPet):
+    def operate(self):
+        print("Зверюга жрет зерно")
+    pass
+
+pet1 = MyCat()
+pet1.operate()
+
+pet2 = MyHumster()
+pet2.operate()
