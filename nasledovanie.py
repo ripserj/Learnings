@@ -94,7 +94,14 @@ class MyPet():
 
 class MyCat(MyPet):
     def operate(self):
+        super().operate()
         print("Зверюга спит")
+
+class MayCuns(MyCat):
+
+    def operate(self):
+        print("Котяра дерет обои")
+        super().operate()
 
 
 class MyHumster(MyPet):
@@ -108,5 +115,8 @@ pet1.operate()
 
 pet2 = MyHumster()
 pet2.operate()
+print("___________________________________")
 
+pet3 = MayCuns()
+pet3.operate()
 
