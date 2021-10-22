@@ -99,6 +99,7 @@ class MyCat(MyPet):
 
 class MyHumster(MyPet):
     def operate(self):
+        super().operate()
         print("Зверюга жрет зерно")
     pass
 
@@ -107,3 +108,5 @@ pet1.operate()
 
 pet2 = MyHumster()
 pet2.operate()
+
+
