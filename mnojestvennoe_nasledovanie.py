@@ -20,9 +20,16 @@ class GeneralTanks(LightTanks, HeavyTanks):
         super().view_me()
         print("Its, General Tanks!")
 
+class Aeroplanes():
+    pass
+
 unit_1 = GeneralTanks()
 unit_1.view_me()
 print(unit_1.__class__.__mro__)
+unit_2 = LightTanks()
+unit_2.veiw_me()
+unit_3 = HeavyTanks()
+unit_3.veiw_me()
 
 unit_4 = GeneralTanks()
 print(unit_4)
