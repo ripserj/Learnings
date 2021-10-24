@@ -23,3 +23,6 @@ class GeneralTanks(LightTanks, HeavyTanks):
 unit_1 = GeneralTanks()
 unit_1.view_me()
 print(unit_1.__class__.__mro__)
+
+unit_4 = GeneralTanks()
+print(unit_4)
